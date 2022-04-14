@@ -5,9 +5,10 @@ const corsOptions ={
    optionSuccessStatus:200,
 }
 
-app.use(cors(corsOptions)) // Use this after the variable declaration
+
 const express = require("express");
 const app = express();
+app.use(cors(corsOptions)) // Use this after the variable declaration
 const importData = require("./data.json");
 let port = process.env.PORT || 3000;
 
